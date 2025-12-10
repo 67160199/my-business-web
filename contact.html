@@ -24,57 +24,97 @@
     </header>
     <hr />
     <main>
-            <!-- Contact Form -->
-        <h1>ติดต่อเรา (Contact Us)</h1>
+      <!-- Contact Form -->
+      <h1>ติดต่อเรา (Contact Us)</h1>
 
-        <section id="contact-form">
-            <h2>ส่งข้อความถึงเรา</h2>
-            <p>มีคำถามหรือข้อเสนอแนะ? กรอกแบบฟอร์มด้านล่างได้เลย</p>
-            
-            <form action="#" method="post">
-                <div>
-                    <label for="name">ชื่อของคุณ (Name):</label><br>
-                    <input type="text" id="name" name="name" placeholder="ระบุชื่อของคุณ" required>
-                </div>
-                <br>
+      <section id="contact-form">
+        <h2>ส่งข้อความถึงเรา</h2>
+        <p>มีคำถามหรือข้อเสนอแนะ? กรอกแบบฟอร์มด้านล่างได้เลย</p>
 
-                <div>
-                    <label for="email">อีเมล (Email):</label><br>
-                    <input type="email" id="email" name="email" placeholder="name@example.com" required>
-                </div>
-                <br>
+        <form action="#" method="post">
+          <div>
+            <label for="name">ชื่อของคุณ (Name):</label><br />
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="ระบุชื่อของคุณ"
+              required
+            />
+          </div>
+          <br />
 
-                <div>
-                    <label for="subject">หัวข้อติดต่อ:</label><br>
-                    <select id="subject" name="subject">
-                        <option value="support">แจ้งปัญหาการใช้งาน</option>
-                        <option value="copyright">ลิขสิทธิ์</option>
-                        <option value="business">ติดต่อโฆษณา/ธุรกิจ</option>
-                        <option value="other">อื่นๆ</option>
-                    </select>
-                </div>
-                <br>
+          <div>
+            <label for="email">อีเมล (Email):</label><br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="name@example.com"
+              required
+            />
+          </div>
+          <br />
 
-                <div>
-                    <label for="message">ข้อความ:</label><br>
-                    <textarea id="message" name="message" rows="5" cols="40" placeholder="พิมพ์ข้อความของคุณที่นี่..." required></textarea>
-                </div>
-                <br>
+          <div>
+            <label for="subject">หัวข้อติดต่อ:</label><br />
+            <select id="subject" name="subject">
+              <option value="support">แจ้งปัญหาการใช้งาน</option>
+              <option value="copyright">ลิขสิทธิ์</option>
+              <option value="business">ติดต่อโฆษณา/ธุรกิจ</option>
+              <option value="other">อื่นๆ</option>
+            </select>
+          </div>
+          <br />
 
-                <button type="submit">ส่งข้อความ</button>
-            </form>
-        </section>
-        <hr>
-        <!-- address -->
-        <section id="address">
-            <h2>สำนักงานใหญ่ (Headquarters)</h2>
-            <address>
-                <strong>SoundCloud Global Limited & Co. KG</strong><br>
-                Rheinsberger Str. 76/77<br>
-                10115 Berlin, Germany<br>
-                Email: contact@soundcloud.com<br>
-                Tel: +49 30 12345678
-            </address>
-        </section>
+          <div>
+            <label for="message">ข้อความ:</label><br />
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              cols="40"
+              placeholder="พิมพ์ข้อความของคุณที่นี่..."
+              required
+            ></textarea>
+          </div>
+          <br />
+
+          <button type="submit">ส่งข้อความ</button>
+        </form>
+      </section>
+      <hr />
+      <!-- address -->
+      <section id="address">
+        <h2>สำนักงานใหญ่ (Headquarters)</h2>
+        <address>
+          <strong>SoundCloud Global Limited & Co. KG</strong><br />
+          Rheinsberger Str. 76/77<br />
+          10115 Berlin, Germany<br />
+          Email: contact@soundcloud.com<br />
+          Tel: +49 30 12345678
+        </address>
+      </section>
+      <hr />
+      <!-- map -->
+      <section id="map">
+        <h2>แผนที่ตั้ง</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2426.794185223061!2d13.392166477238206!3d52.53715787206562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851f11cea3617%3A0xd4277880007598c2!2sSoundCloud%20HQ!5e0!3m2!1sen!2sth!4v1765360539916!5m2!1sen!2sth"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+    </main>
+
+    <hr />
+
+    <footer>
+      <p>&copy; 2025 SoundCloud. All rights reserved.</p>
+    </footer>
   </body>
 </html>
