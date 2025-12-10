@@ -22,5 +22,47 @@
         </ul>
       </nav>
     </header>
+    <hr />
+    <main>
+            <!-- Contact Form -->
+        <h1>ติดต่อเรา (Contact Us)</h1>
+
+        <section id="contact-form">
+            <h2>ส่งข้อความถึงเรา</h2>
+            <p>มีคำถามหรือข้อเสนอแนะ? กรอกแบบฟอร์มด้านล่างได้เลย</p>
+            
+            <form action="#" method="post">
+                <div>
+                    <label for="name">ชื่อของคุณ (Name):</label><br>
+                    <input type="text" id="name" name="name" placeholder="ระบุชื่อของคุณ" required>
+                </div>
+                <br>
+
+                <div>
+                    <label for="email">อีเมล (Email):</label><br>
+                    <input type="email" id="email" name="email" placeholder="name@example.com" required>
+                </div>
+                <br>
+
+                <div>
+                    <label for="subject">หัวข้อติดต่อ:</label><br>
+                    <select id="subject" name="subject">
+                        <option value="support">แจ้งปัญหาการใช้งาน</option>
+                        <option value="copyright">ลิขสิทธิ์</option>
+                        <option value="business">ติดต่อโฆษณา/ธุรกิจ</option>
+                        <option value="other">อื่นๆ</option>
+                    </select>
+                </div>
+                <br>
+
+                <div>
+                    <label for="message">ข้อความ:</label><br>
+                    <textarea id="message" name="message" rows="5" cols="40" placeholder="พิมพ์ข้อความของคุณที่นี่..." required></textarea>
+                </div>
+                <br>
+
+                <button type="submit">ส่งข้อความ</button>
+            </form>
+        </section>
   </body>
 </html>
