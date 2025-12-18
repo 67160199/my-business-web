@@ -179,3 +179,45 @@ header img:hover {
   background-color: #e67e22;
   box-shadow: 0 6px 12px rgba(255, 140, 0, 0.4);
 }
+/* =========================================
+   7. SERVICES GRID & CARDS (การ์ดบริการ)
+   ========================================= */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(260px, 1fr)
+  ); /* ✅ จัดการ์ดอัตโนมัติตามขนาดจอ */
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  text-align: center;
+  border-bottom: 5px solid #ff8c00; /* ขอบล่างสีส้ม */
+}
+
+.card:hover {
+  transform: translateY(-10px); /* ลอยขึ้นเมื่อเอาเมาส์ชี้ */
+  box-shadow: 0 15px 30px rgba(255, 140, 0, 0.15);
+}
+
+.card h3 {
+  color: #ff8c00;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.card i {
+  font-size: 2.5rem; /* ขนาดไอคอน */
+  margin-bottom: 20px;
+  color: #ff8c00;
+  background: #fff3e0;
+  padding: 15px;
+  border-radius: 50%;
+}
