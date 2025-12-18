@@ -297,3 +297,19 @@ header img:hover {
   cursor: pointer;
   z-index: 999;
 }
+/* =========================================
+   9. RESPONSIVE
+   ========================================= */
+@media (max-width: 768px) {
+  .hero h2 {
+    font-size: 2.5rem;
+  }
+  .nav-bar {
+    height: auto;
+    padding: 10px;
+  }
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
