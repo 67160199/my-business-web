@@ -130,3 +130,38 @@ header img:hover {
   margin-bottom: 2rem;
   color: #ddd;
 }
+/* =========================================
+   6. BUTTONS (Digital Style)
+   ========================================= */
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s;
+  font-size: 1rem;
+  border: 1px solid transparent;
+}
+
+.btn-primary {
+  background-color: #ff5500; /* SoundCloud Orange */
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #e04a00;
+  box-shadow: 0 0 15px rgba(255, 85, 0, 0.6); /* เรืองแสง */
+}
+
+.btn:not(.btn-primary) {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  margin-left: 10px;
+}
+
+.btn:not(.btn-primary):hover {
+  background-color: #fff;
+  color: #000;
+}
