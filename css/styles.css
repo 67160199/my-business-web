@@ -346,3 +346,83 @@ header img:hover {
   font-size: 0.9rem;
   color: #666;
 }
+/* =========================================
+   11. FOOTER & WIDGETS (ส่วนท้ายและปุ่มลอย)
+   ========================================= */
+#footer {
+  text-align: center;
+  padding: 30px;
+  background-color: #2c3e50; /* สีเทาเข้มเกือบดำ */
+  color: #bdc3c7;
+  margin-top: 60px;
+}
+
+/* ปุ่มเลื่อนกลับด้านบน (Back to Top) */
+.btn-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ff8c00;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+  transition: all 0.3s;
+}
+
+.btn-top:hover {
+  background-color: #e67e22;
+  transform: translateY(-5px);
+}
+
+/* ปุ่มแชท (Chat Widget) */
+.chat-widget {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  background-color: #2ecc71;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(46, 204, 113, 0.4);
+  z-index: 999;
+  transition: transform 0.3s;
+  border: 2px solid white;
+}
+
+.chat-widget:hover {
+  transform: scale(1.1); /* ขยายใหญ่ขึ้นเมื่อชี้ */
+}
+
+/* ส่วนติดต่อเรา */
+.contact-container {
+  display: flex;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.contact-info,
+.contact-form-wrapper {
+  flex: 1; /* แบ่งพื้นที่เท่ากัน */
+}
+
+.info-box {
+  background-color: #f7f8fa;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: inherit;
+}
