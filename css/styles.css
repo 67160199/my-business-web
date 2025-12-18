@@ -58,3 +58,30 @@ body {
   background-color: #111; /* ดำสนิทเมื่อชี้ */
   border-bottom: 2px solid #ff5500; /* ขีดเส้นใต้สีส้ม */
 }
+/* =========================================
+   3. HEADER & LOGO
+   ========================================= */
+header section#Header {
+  background: linear-gradient(
+    180deg,
+    #333 0%,
+    #f2f2f2 100%
+  ); /* ไล่สีดำลงมาขาว */
+  padding: 40px 0 20px;
+  text-align: center;
+  position: relative;
+}
+
+header img {
+  height: 100px;
+  width: auto;
+  border-radius: 50%; /* โลโก้กลม */
+  border: 4px solid #ff5500; /* ขอบสีส้ม SoundCloud */
+  background-color: #000;
+  box-shadow: 0 0 20px rgba(255, 85, 0, 0.4); /* เงาสีส้มเรืองแสง */
+  transition: transform 0.3s ease;
+}
+
+header img:hover {
+  transform: rotate(360deg); /* หมุนแผ่นเสียงเมื่อเอาเมาส์ชี้ */
+}
