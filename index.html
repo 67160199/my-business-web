@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="th">
   <head>
+    <!-- Meta & SEO -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
@@ -8,95 +9,131 @@
       content="SoundCloud - แพลตฟอร์มสตรีมเพลงและเสียงที่ใหญ่ที่สุดในโลก"
     />
     <meta name="author" content="SoundCloud Team" />
+
+    <!-- Page title -->
     <title>SoundCloud - Hear the world’s sounds</title>
+
+    <!-- Main stylesheet -->
     <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
   </head>
+
   <body>
-    <!-- header -->
+    <!-- ==================== Navigation Bar ==================== -->
+    <nav class="nav-bar">
+      <div class="nav-links">
+        <a href="index.html" class="active">หน้าแรก</a>
+        <a href="about.html">เกี่ยวกับเรา</a>
+        <a href="services.html">บริการ (Plans)</a>
+        <a href="contact.html">ติดต่อ</a>
+      </div>
+    </nav>
+
+    <!-- ==================== Header / Branding ==================== -->
     <header>
-      <section id="branding">
-        <h1>SoundCloud</h1>
+      <section id="Header">
+        <!-- Hidden H1 for SEO -->
+        <h1 style="display: none">SoundCloud</h1>
         <figure>
-          <img src="images/logo.jpg" alt="SoundCloud Logo" width="100" />
+          <img src="images/logo.jpg" alt="SoundCloud Logo" />
         </figure>
       </section>
-      <!-- Navigation menu -->
-      <nav>
-        <ul>
-          <li><a href="index.html">หน้าแรก</a></li>
-          <li><a href="about.html">เกี่ยวกับเรา</a></li>
-          <li><a href="services.html">บริการ (Plans)</a></li>
-          <li><a href="contact.html">ติดต่อ</a></li>
-        </ul>
-      </nav>
     </header>
-    <hr />
-    <main>
-      <!-- Hero section -->
-      <section id="hero">
-        <article>
-          <h2>ยินดีต้อนรับสู่ SoundCloud</h2>
-          <p>
-            SoundCloud เป็นแพลตฟอร์มเสียงแบบเปิดที่ใหญ่ที่สุดในโลก
-            ขับเคลื่อนโดยชุมชนครีเอเตอร์ และผู้ฟังที่หลงใหลในดนตรี
-            ไม่ว่าคุณจะเป็นศิลปินหน้าใหม่ โปรดิวเซอร์อินดี้
-            หรือผู้ฟังที่กำลังตามหาเสียงที่ใช่
-            ที่นี่คือพื้นที่ที่คุณสามารถค้นพบเพลงใหม่จากทั่วโลก
-            เชื่อมต่อกับศิลปินที่คุณชื่นชอบ
-            และแบ่งปันเสียงของคุณให้ผู้คนมากกว่าหลายล้านคนได้ฟัง บน SoundCloud
-            คุณสามารถอัปโหลดผลงานของตัวเอง ติดตามเทรนด์ใหม่ๆ จากชุมชน
-            เข้าร่วมวงสนทนาของคนรักดนตรี และสร้างฐานแฟนคลับของคุณได้อย่างอิสระ
-            เรามุ่งมั่นที่จะสนับสนุนครีเอเตอร์ทุกระดับ
-            ให้สามารถเติบโตและทำให้ผลงานของตัวเอง เป็นที่รู้จักในเวทีระดับโลก
-            ไม่ว่าคุณจะอยากค้นหา เสพ หรือสร้างสรรค์เสียงใหม่ๆ SoundCloud
-            คือบ้านของคุณบนโลกดนตรีออนไลน์.
-          </p>
-          <p>
-            <strong>"อัปโหลดเพลงของคุณ และเริ่มต้นเส้นทางดนตรีวันนี้"</strong>
-          </p>
-          <button>สมัครสมาชิกฟรี</button>
-          <button>เรียนรู้เพิ่มเติม</button>
-        </article>
-      </section>
-      <hr />
 
-      <!-- featured -->
-      <section id="featured-services">
-        <h2>ฟีเจอร์และบริการหลัก</h2>
-        <ul>
-          <li>
-            <h3>Upload & Share</h3>
+    <!-- ==================== Main Content ==================== -->
+    <div class="container">
+      <main>
+        <!-- ===== Hero Section ===== -->
+        <section id="hero" class="hero">
+          <article>
+            <h2>ยินดีต้อนรับสู่ SoundCloud</h2>
             <p>
-              อัปโหลดแทร็กเพลง พอดแคสต์ หรือเดโมของคุณได้ทันที
-              และแชร์ให้ผู้ฟังทั่วโลกเข้าถึงได้ง่ายๆ
+              SoundCloud เป็นแพลตฟอร์มเสียงแบบเปิดที่ใหญ่ที่สุดในโลก
+              ขับเคลื่อนโดยชุมชนครีเอเตอร์ และผู้ฟังที่หลงใหลในดนตรี
+              ไม่ว่าคุณจะเป็นศิลปินหน้าใหม่ โปรดิวเซอร์อินดี้
+              หรือผู้ฟังที่กำลังตามหาเสียงที่ใช่
             </p>
-          </li>
+            <p>
+              ที่นี่คือพื้นที่ที่คุณสามารถค้นพบเพลงใหม่จากทั่วโลก
+              เชื่อมต่อกับศิลปินที่คุณชื่นชอบ
+              และแบ่งปันเสียงของคุณให้ผู้คนมากกว่าหลายล้านคนได้ฟัง
+            </p>
+            <p>
+              <strong>"อัปโหลดเพลงของคุณ และเริ่มต้นเส้นทางดนตรีวันนี้"</strong>
+            </p>
 
-          <li>
-            <h3>Music Discovery</h3>
-            <p>
-              ค้นพบเพลงใหม่ๆ จากศิลปินหน้าใหม่และมืออาชีพ
-              ที่คุณอาจหาไม่ได้จากที่อื่น ด้วยอัลกอริทึมแนะนำอัจฉริยะ
-            </p>
-          </li>
+            <!-- Call to Action Buttons -->
+            <a href="#" class="btn btn-primary">สมัครสมาชิกฟรี</a>
+            <a href="#" class="btn" style="margin-left: 10px"
+              >เรียนรู้เพิ่มเติม</a
+            >
+          </article>
+        </section>
 
-          <li>
-            <h3>Community & Feedback</h3>
-            <p>
-              เชื่อมต่อกับแฟนคลับโดยตรง คอมเมนต์บนช่วงเวลาของเพลง (Waveform)
-              และสร้างชุมชนดนตรีที่แข็งแกร่ง
-            </p>
-          </li>
-        </ul>
-      </section>
-    </main>
-    <hr />
-    <!-- footer -->
-    <footer>
+        <!-- ===== Featured Services Section ===== -->
+        <section id="featured-services">
+          <!-- Section Header -->
+          <div class="page-header" style="margin-top: 40px">
+            <h2>ฟีเจอร์และบริการหลัก</h2>
+            <p>สิ่งที่คุณจะได้รับจาก SoundCloud</p>
+          </div>
+
+          <!-- Services Grid -->
+          <div class="services-grid">
+            <!-- Service Card 1 -->
+            <article class="card">
+              <i class="fa-solid fa-cloud-arrow-up"></i>
+              <h3>Upload & Share</h3>
+              <p>
+                อัปโหลดแทร็กเพลง พอดแคสต์ หรือเดโมของคุณได้ทันที
+                และแชร์ให้ผู้ฟังทั่วโลกเข้าถึงได้ง่ายๆ
+              </p>
+            </article>
+
+            <!-- Service Card 2 -->
+            <article class="card">
+              <i class="fa-solid fa-music"></i>
+              <h3>Music Discovery</h3>
+              <p>
+                ค้นพบเพลงใหม่ๆ จากศิลปินหน้าใหม่และมืออาชีพ
+                ที่คุณอาจหาไม่ได้จากที่อื่น ด้วยอัลกอริทึมแนะนำอัจฉริยะ
+              </p>
+            </article>
+
+            <!-- Service Card 3 -->
+            <article class="card">
+              <i class="fa-solid fa-users"></i>
+              <h3>Community</h3>
+              <p>
+                เชื่อมต่อกับแฟนคลับโดยตรง คอมเมนต์บนช่วงเวลาของเพลง
+                และสร้างชุมชนดนตรีที่แข็งแกร่ง
+              </p>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <!-- ==================== Footer ==================== -->
+    <footer id="footer">
       <p>
         &copy; 2025 SoundCloud. All rights reserved. Connecting people through
         music.
       </p>
     </footer>
+
+    <!-- ==================== Floating Widgets ==================== -->
+    <!-- Back to Top Button -->
+    <a href="#" class="btn-top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <!-- Chat Widget -->
+    <div class="chat-widget"><i class="fa-solid fa-comments"></i> Chat</div>
   </body>
 </html>
