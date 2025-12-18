@@ -1,148 +1,176 @@
 <!DOCTYPE html>
 <html lang="th">
   <head>
+    <!-- ===== META DATA ===== -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="บริการและแพ็กเกจสมาชิกของ SoundCloud" />
     <meta name="author" content="SoundCloud Team" />
+
+    <!-- ===== PAGE TITLE ===== -->
     <title>Services & Plans - SoundCloud</title>
+
+    <!-- ===== MAIN STYLESHEET ===== -->
     <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- ===== FONT AWESOME ICONS ===== -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
   </head>
+
   <body>
-    <!-- header -->
+    <!-- =========================================
+         NAVIGATION BAR
+    ========================================= -->
+    <nav class="nav-bar">
+      <div class="nav-links">
+        <a href="index.html">หน้าแรก</a>
+        <a href="about.html">เกี่ยวกับเรา</a>
+        <a href="services.html" class="active">บริการ</a>
+        <a href="contact.html">ติดต่อ</a>
+      </div>
+    </nav>
+
+    <!-- =========================================
+         HEADER & LOGO
+    ========================================= -->
     <header>
-      <h1>SoundCloud</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">หน้าแรก</a></li>
-          <li><a href="about.html">เกี่ยวกับเรา</a></li>
-          <li><a href="services.html">บริการ</a></li>
-          <li><a href="contact.html">ติดต่อ</a></li>
-        </ul>
-      </nav>
+      <section id="Header">
+        <h1 style="display: none">SoundCloud</h1>
+        <figure>
+          <img src="images/logo.png" alt="SoundCloud Logo" />
+        </figure>
+      </section>
     </header>
-    <hr />
 
-    <!-- service -->
-    <main>
-      <h1>บริการของเรา</h1>
+    <!-- =========================================
+         MAIN CONTENT CONTAINER
+    ========================================= -->
+    <div class="container">
+      <main>
+        <!-- ===== PAGE HEADER ===== -->
+        <div class="page-header" style="margin-top: 40px">
+          <h1>บริการของเรา (Our Services)</h1>
+          <p>เลือกเครื่องมือและบริการที่เหมาะกับเส้นทางดนตรีของคุณ</p>
+        </div>
 
-      <section id="service-streaming">
-        <h2>1. Music Streaming (ฟังเพลง)</h2>
-        <p>
-          เข้าถึงคลังเพลงที่ใหญ่ที่สุดในโลกกว่า 300 ล้านแทร็ก
-          ค้นพบเพลย์ลิสต์ที่จัดทำโดยผู้เชี่ยวชาญ
-          และฟังเพลงแบบไม่มีโฆษณาคั่นด้วยระบบ SoundCloud Go+ คุณภาพเสียงระดับ
-          High Quality Audio
-        </p>
-      </section>
+        <!-- =========================================
+             SERVICES SECTION
+        ========================================= -->
+        <div class="services-grid">
+          <!-- Music Streaming -->
+          <section id="service-streaming" class="card">
+            <i class="fa-solid fa-headphones"></i>
+            <h2>1. Music Streaming</h2>
+            <p>
+              เข้าถึงคลังเพลงที่ใหญ่ที่สุดในโลกกว่า 300 ล้านแทร็ก
+              ฟังเพลงแบบไม่มีโฆษณาคั่นและคุณภาพเสียงระดับสูง (Go+)
+            </p>
+          </section>
 
-      <section id="service-upload">
-        <h2>2. Creator Tools (เครื่องมือสำหรับศิลปิน)</h2>
-        <p>
-          พื้นที่สำหรับอัปโหลดผลงานของคุณสู่สาธารณะ ดูสถิติเชิงลึก (Insights)
-          ว่าใครฟังเพลงของคุณจากที่ไหน พร้อมเครื่องมือ Mastering
-          เพลงให้อัตโนมัติด้วย Dolby Audio เพื่อให้เสียงดีที่สุด
-        </p>
-      </section>
+          <!-- Creator Tools -->
+          <section id="service-upload" class="card">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+            <h2>2. Creator Tools</h2>
+            <p>
+              พื้นที่สำหรับอัปโหลดผลงาน ดูสถิติเชิงลึก (Insights)
+              พร้อมเครื่องมือ Mastering เพลงให้อัตโนมัติด้วย Dolby Audio
+            </p>
+          </section>
 
-      <section id="service-monetization">
-        <h2>3. Monetization & Distribution (สร้างรายได้)</h2>
-        <p>
-          บริการช่วยกระจายเพลงของคุณไปยัง Spotify, Apple Music และแพลตฟอร์มอื่นๆ
-          พร้อมระบบ Fan-Powered Royalties ที่ให้แฟนคลับสนับสนุนศิลปินโดยตรง
-          เปลี่ยนยอดวิวให้เป็นรายได้จริง
-        </p>
-      </section>
-      <hr />
-      <!-- member -->
-      <section>
-        <h2>แพ็กเกจสมาชิก</h2>
-        <table border="1" cellpadding="10" cellspacing="0">
-          <thead>
-            <tr>
-              <th>คุณสมบัติ</th>
-              <th>Free</th>
-              <th>Next Pro</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>เวลาอัปโหลด</td>
-              <td>3 ชั่วโมง</td>
-              <td>ไม่จำกัด</td>
-            </tr>
-            <tr>
-              <td>ราคา</td>
-              <td>ฟรี</td>
-              <td>$9.99/เดือน</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
+          <!-- Monetization -->
+          <section id="service-monetization" class="card">
+            <i class="fa-solid fa-sack-dollar"></i>
+            <h2>3. Monetization</h2>
+            <p>
+              กระจายเพลงของคุณไปยัง Spotify, Apple Music
+              พร้อมระบบรายได้จากแฟนคลับ (Fan-Powered Royalties)
+            </p>
+          </section>
+        </div>
 
-      <!-- plans-comparison -->
-      <section id="plans-comparison">
-        <h2>เปรียบเทียบแพ็กเกจสำหรับศิลปิน (Plans)</h2>
+        <!-- =========================================
+             PLANS COMPARISON TABLE
+        ========================================= -->
+        <section id="plans-comparison" class="pricing-section">
+          <h2>เปรียบเทียบแพ็กเกจสำหรับศิลปิน (Plans)</h2>
 
-        <table
-          border="1"
-          cellpadding="10"
-          cellspacing="0"
-          style="width: 100%; text-align: center"
-        >
-          <thead>
-            <tr style="background-color: #f2f2f2">
-              <th>คุณสมบัติ (Features)</th>
-              <th>SoundCloud Free</th>
-              <th>Next Pro (แนะนำ)</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td style="text-align: left">เวลาอัปโหลด (Upload Time)</td>
-              <td>3 ชั่วโมง</td>
-              <td><strong>ไม่จำกัด (Unlimited)</strong></td>
-            </tr>
-            <tr>
-              <td style="text-align: left">สถิติข้อมูล (Insights)</td>
-              <td>พื้นฐาน</td>
-              <td>เชิงลึก (Advanced)</td>
-            </tr>
-            <tr>
-              <td style="text-align: left">การสร้างรายได้ (Monetization)</td>
-              <td>ไม่มี</td>
-              <td>มี (Fan-Powered)</td>
-            </tr>
-            <tr>
-              <td style="text-align: left">เครื่องมือ Mastering</td>
-              <td>จ่ายต่อครั้ง</td>
-              <td>ฟรี 3 ครั้ง/เดือน</td>
-            </tr>
-            <tr>
-              <td style="text-align: left">แจกป้าย Verified (Blue Check)</td>
-              <td>-</td>
-              <td>&#10004; ได้รับสิทธิ์</td>
-            </tr>
-            <tr style="font-weight: bold">
-              <td style="text-align: left">ราคา (Price)</td>
-              <td>ฟรี</td>
-              <td>$9.99 / เดือน</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-    </main>
-    <hr />
-    <!-- go to index -->
-    <section>
-      <p>ไปสู่หน้าหลัก</p>
-      <a href="index.html">
-        <button>กลับสู่หน้าแรก</button>
-      </a>
-    </section>
-    <footer>
+          <div class="table-responsive">
+            <table class="service-table">
+              <thead>
+                <tr>
+                  <th>คุณสมบัติ (Features)</th>
+                  <th>SoundCloud Free</th>
+                  <th>Next Pro (แนะนำ)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="text-align: left">เวลาอัปโหลด (Upload Time)</td>
+                  <td>3 ชั่วโมง</td>
+                  <td><strong>ไม่จำกัด (Unlimited)</strong></td>
+                </tr>
+                <tr>
+                  <td style="text-align: left">สถิติข้อมูล (Insights)</td>
+                  <td>พื้นฐาน</td>
+                  <td>เชิงลึก (Advanced)</td>
+                </tr>
+                <tr>
+                  <td style="text-align: left">
+                    การสร้างรายได้ (Monetization)
+                  </td>
+                  <td>ไม่มี</td>
+                  <td>มี (Fan-Powered)</td>
+                </tr>
+                <tr>
+                  <td style="text-align: left">เครื่องมือ Mastering</td>
+                  <td>จ่ายต่อครั้ง</td>
+                  <td>ฟรี 3 ครั้ง/เดือน</td>
+                </tr>
+                <tr>
+                  <td style="text-align: left">Verified Badge</td>
+                  <td>-</td>
+                  <td>
+                    <i
+                      class="fa-solid fa-circle-check"
+                      style="color: #3498db"
+                    ></i>
+                    ได้รับสิทธิ์
+                  </td>
+                </tr>
+                <tr style="font-weight: bold">
+                  <td style="text-align: left">ราคา (Price)</td>
+                  <td>ฟรี</td>
+                  <td style="color: #ff5500">$9.99 / เดือน</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- =========================================
+             BACK TO HOME
+        ========================================= -->
+        <section style="text-align: center; margin-top: 50px">
+          <a href="index.html" class="btn btn-primary">
+            <i class="fa-solid fa-house"></i> กลับสู่หน้าแรก
+          </a>
+        </section>
+      </main>
+    </div>
+
+    <!-- =========================================
+         FOOTER
+    ========================================= -->
+    <footer id="footer">
       <p>&copy; 2025 SoundCloud. All rights reserved.</p>
     </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="btn-top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
   </body>
 </html>
