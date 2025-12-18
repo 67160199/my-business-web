@@ -85,3 +85,11 @@ header img {
 header img:hover {
   transform: rotate(360deg); /* หมุนแผ่นเสียงเมื่อเอาเมาส์ชี้ */
 }
+/* =========================================
+   4. LAYOUT CONTAINERS
+   ========================================= */
+.container {
+  max-width: 1200px; /* */
+  margin: 0 auto;
+  padding: 0 20px;
+}
