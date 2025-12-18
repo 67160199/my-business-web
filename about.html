@@ -9,113 +9,154 @@
     />
     <meta name="author" content="SoundCloud Team" />
     <title>About Us - SoundCloud</title>
+
     <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
   </head>
+
   <body>
+    <!-- navigation -->
+    <nav class="nav-bar">
+      <div class="nav-links">
+        <a href="index.html">หน้าแรก</a>
+        <a href="about.html" class="active">เกี่ยวกับเรา</a>
+        <a href="services.html">บริการ (Plans)</a>
+        <a href="contact.html">ติดต่อ</a>
+      </div>
+    </nav>
+
     <!-- header -->
     <header>
-      <h1>SoundCloud</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">หน้าแรก</a></li>
-          <li><a href="about.html">เกี่ยวกับเรา</a></li>
-          <li><a href="services.html">บริการ</a></li>
-          <li><a href="contact.html">ติดต่อ</a></li>
-        </ul>
-      </nav>
+      <section id="Header">
+        <h1 style="display: none">SoundCloud</h1>
+        <figure>
+          <img src="images/logo.png" alt="SoundCloud Logo" />
+        </figure>
+      </section>
     </header>
 
-    <hr />
-    <main>
-      <!-- story -->
-      <section id="company-story">
-        <h2>เรื่องราวของเรา (Our Story)</h2>
-        <article>
-          <p>
-            SoundCloud ก่อตั้งขึ้นในปี 2007 ที่กรุงเบอร์ลิน ประเทศเยอรมนี โดย
-            Alexander Ljung และ Eric Wahlforss ด้วยวิสัยทัศน์ง่าย ๆ แต่ทรงพลัง:
-            “ทำให้ทุกคนบนโลกสามารถแบ่งปันเสียงของตัวเองได้อย่างอิสระ” ในยุคนั้น
-            แพลตฟอร์มสำหรับศิลปินอิสระยังมีน้อยมาก
-            การเผยแพร่เพลงทำได้ยากและต้องพึ่งค่ายใหญ่ SoundCloud
-            จึงถือกำเนิดขึ้นเพื่อเป็น พื้นที่เปิด (Open Platform)
-            สำหรับเสียงทุกรูปแบบ ไม่ว่าจะเป็นเพลง ดนตรีทดลอง พอดแคสต์
-            เสียงธรรมชาติ หรือไอเดียที่เพิ่งเกิดขึ้นเมื่อไม่กี่นาทีที่ผ่านมา
-          </p>
-          <p>
-            จากโปรเจกต์เล็ก → สู่ชุมชนดนตรีระดับโลก เมื่อเริ่มต้น SoundCloud
-            เปิดโอกาสให้นักดนตรีอัปโหลดเสียงได้ง่ายและแบ่งลิงก์ให้คนทั่วโลกฟังแบบเรียลไทม์
-            ฟีเจอร์หนึ่งที่ทำให้ SoundCloud แตกต่างคือ การคอมเมนต์ตามช่วงเวลาใน
-            waveform ซึ่งทำให้ผู้ฟังใกล้ชิดกับศิลปินมากขึ้นกว่าเดิม
-            ผลลัพธ์คือศิลปินอินดี้นับพันเริ่มมีพื้นที่ให้เติบโต
-            เกิดการปะทุของเพลงใหม่ แนวใหม่ และศิลปินหน้าใหม่ทั่วโลก
-          </p>
-          <p>
-            SoundCloud คือจุดเริ่มต้นของตำนานหลายคน
-            ศิลปินชื่อดังหลายคนเริ่มต้นจาก SoundCloud เช่น Billie Eilish Post
-            Malone Chance the Rapper XXXTentacion Kygo San Holo
-            แพลตฟอร์มนี้กลายเป็น แหล่งค้นพบศิลปินหน้าใหม่ที่ใหญ่ที่สุดในโลก
-            จนเกิดคำว่า “SoundCloud Rapper” ซึ่งกลายเป็นกระแสระดับโลก
-          </p>
-        </article>
-      </section>
-      <hr />
-      <!-- mission-vision -->
-      <section id="mission-vision">
-        <h2>พันธกิจและวิสัยทัศน์</h2>
-        <ul>
-          <li>
-            <strong>พันธกิจ (Mission):</strong>
-            เสริมสร้างพลังให้กับครีเอเตอร์อิสระทั่วโลก ด้วยเครื่องมือ บริการ
-            และทรัพยากรที่จำเป็น ในการสร้างอาชีพและฐานแฟนคลับของตนเอง
-          </li>
-          <li>
-            <strong>วิสัยทัศน์ (Vision):</strong>
-            เป็นจุดหมายปลายทางอันดับหนึ่งของโลกสำหรับดนตรีและวัฒนธรรมเสียง
-            ที่ซึ่งทุกคนสามารถเป็นศิลปินและค้นพบเสียงที่ตนหลงใหล
-          </li>
-        </ul>
-      </section>
-      <hr />
-      <!-- team -->
-      <section id="team">
-        <h2>ทีมงานของเรา</h2>
+    <!-- main -->
+    <div class="container">
+      <main>
+        <!-- company story -->
+        <section id="company-story">
+          <div class="page-header" style="margin-top: 40px">
+            <h2>เรื่องราวของเรา (Our Story)</h2>
+          </div>
 
-        <figure>
-          <img src="images/Ljung.jpg" alt="CEO" width="150" />
-          <figcaption>
-            <strong>Alexander Ljung</strong><br />
-            Co-Founder & Chairman
-          </figcaption>
-        </figure>
+          <article
+            style="
+              background: white;
+              padding: 30px;
+              border-radius: 8px;
+              border: 1px solid #eee;
+            "
+          >
+            <p style="margin-bottom: 15px">
+              SoundCloud ก่อตั้งขึ้นในปี 2007 ที่กรุงเบอร์ลิน ประเทศเยอรมนี โดย
+              <strong>Alexander Ljung</strong> และ
+              <strong>Eric Wahlforss</strong> ด้วยวิสัยทัศน์ง่าย ๆ แต่ทรงพลัง:
+              <em>“ทำให้ทุกคนบนโลกสามารถแบ่งปันเสียงของตัวเองได้อย่างอิสระ”</em>
+              ในยุคนั้นแพลตฟอร์มสำหรับศิลปินอิสระยังมีน้อยมาก
+              การเผยแพร่เพลงทำได้ยากและต้องพึ่งค่ายใหญ่ SoundCloud
+              จึงถือกำเนิดขึ้นเพื่อเป็น
+              <strong>พื้นที่เปิด (Open Platform)</strong>
+              สำหรับเสียงทุกรูปแบบ
+            </p>
 
-        <figure>
-          <img src="images/Eric.jpg" alt="CTO" width="150" />
-          <figcaption>
-            <strong>Eric Wahlforss</strong><br />
-            Co-Founder & Chief Product Officer
-          </figcaption>
-        </figure>
+            <p style="margin-bottom: 15px">
+              <strong>จากโปรเจกต์เล็ก → สู่ชุมชนดนตรีระดับโลก</strong>
+              SoundCloud เปิดโอกาสให้นักดนตรีอัปโหลดเสียงได้ง่าย
+              และคอมเมนต์ตามช่วงเวลาใน waveform
+              ทำให้ศิลปินใกล้ชิดกับผู้ฟังมากขึ้น
+            </p>
 
-        <figure>
-          <img src="images/sarah.jpg" alt="Head of Music" width="150" />
-          <figcaption>
-            <strong>Sarah Smith</strong><br />
-            Head of Artist Relations
-          </figcaption>
-        </figure>
-      </section>
-      <hr />
-      <!-- go to index -->
-      <section>
-        <p>ไปสู่หน้าหลัก</p>
-        <a href="index.html">
-          <button>กลับสู่หน้าแรก</button>
-        </a>
-      </section>
-    </main>
-    <hr />
-    <footer>
+            <p>
+              ศิลปินชื่อดังหลายคนเริ่มต้นจาก SoundCloud เช่น Billie Eilish, Post
+              Malone, Chance the Rapper, XXXTentacion, Kygo และ San Holo
+              จนกลายเป็นแหล่งค้นพบศิลปินหน้าใหม่ที่ใหญ่ที่สุดในโลก
+            </p>
+          </article>
+        </section>
+
+        <!-- mission & vision -->
+        <section id="mission-vision">
+          <div class="page-header" style="margin-top: 50px">
+            <h2>พันธกิจและวิสัยทัศน์</h2>
+          </div>
+
+          <div class="services-grid">
+            <article class="card">
+              <i class="fa-solid fa-rocket"></i>
+              <h3>พันธกิจ (Mission)</h3>
+              <p>
+                เสริมสร้างพลังให้กับครีเอเตอร์อิสระทั่วโลก
+                ด้วยเครื่องมือและทรัพยากรที่จำเป็น
+              </p>
+            </article>
+
+            <article class="card">
+              <i class="fa-solid fa-eye"></i>
+              <h3>วิสัยทัศน์ (Vision)</h3>
+              <p>
+                เป็นจุดหมายปลายทางอันดับหนึ่งของโลก สำหรับดนตรีและวัฒนธรรมเสียง
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <!-- team -->
+        <section id="team">
+          <div class="page-header" style="margin-top: 50px">
+            <h2>ทีมงานของเรา</h2>
+          </div>
+
+          <div class="services-grid">
+            <figure class="card">
+              <img
+                src="images/Ljung.jpg"
+                alt="CEO"
+                width="150"
+                style="border-radius: 50%; margin-bottom: 15px"
+              />
+              <figcaption>
+                <h3 style="color: #ff5500">Alexander Ljung</h3>
+                <p>Co-Founder & Chairman</p>
+              </figcaption>
+            </figure>
+
+            <figure class="card">
+              <img
+                src="images/Eric.jpg"
+                alt="CTO"
+                width="150"
+                style="border-radius: 50%; margin-bottom: 15px"
+              />
+              <figcaption>
+                <h3 style="color: #ff5500">Eric Wahlforss</h3>
+                <p>Co-Founder & Chief Product Officer</p>
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <!-- back to home -->
+        <section style="text-align: center; margin-top: 50px">
+          <p>พร้อมที่จะฟังเพลงหรือยัง?</p>
+          <a href="index.html" class="btn btn-primary">กลับสู่หน้าแรก</a>
+        </section>
+      </main>
+    </div>
+
+    <!-- footer -->
+    <footer id="footer">
       <p>&copy; 2025 SoundCloud. All rights reserved.</p>
     </footer>
+
+    <!-- back to top -->
+    <a href="#" class="btn-top">^</a>
   </body>
 </html>
