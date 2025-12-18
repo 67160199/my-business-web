@@ -245,3 +245,55 @@ header img:hover {
   margin-bottom: 10px;
   color: #111;
 }
+/* =========================================
+   8. FOOTER
+   ========================================= */
+#footer {
+  background-color: #111;
+  color: #666;
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 60px;
+  border-top: 3px solid #ff5500;
+}
+
+/* ปุ่ม Back to Top */
+.btn-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #333;
+  color: #ff5500;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+  border: 2px solid #ff5500;
+}
+
+.btn-top:hover {
+  background-color: #ff5500;
+  color: #fff;
+}
+
+/* Chat Widget */
+.chat-widget {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  background-color: #fff;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  border: 2px solid #ff5500;
+  cursor: pointer;
+  z-index: 999;
+}
