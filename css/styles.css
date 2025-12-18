@@ -426,3 +426,43 @@ header img:hover {
   border-radius: 6px;
   font-family: inherit;
 }
+/* =========================================
+   12. ANIMATION & MOBILE (แอนิเมชันและการแสดงผลมือถือ)
+   ========================================= */
+/* Animation เลื่อนขึ้น */
+@keyframes slideInUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive สำหรับมือถือ (หน้าจอเล็กกว่า 768px) */
+@media (max-width: 768px) {
+  .mv-grid,
+  .contact-container {
+    flex-direction: column; /* เปลี่ยนจากแนวนอนเป็นแนวตั้ง */
+  }
+
+  .nav-bar {
+    height: auto;
+    padding: 15px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero h2 {
+    font-size: 2rem; /* ลดขนาดตัวหนังสือหัวข้อ */
+  }
+
+  .chat-widget {
+    display: none; /* ซ่อนปุ่มแชทในมือถือเพื่อไม่ให้บังจอ */
+  }
+}
