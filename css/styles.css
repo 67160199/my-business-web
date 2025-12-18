@@ -66,7 +66,7 @@ header section#Header {
 }
 
 header img {
-  height: 120px; /* ✅ กำหนดขนาดโลโก้ให้ใหญ่สะใจ */
+  height: 120px; /* ✅ กำหนดขนาดโลโก้ให้ใหญ่ */
   width: auto;
   background-color: white;
   border-radius: 20px; /* ✅ มุมมนแบบแอปมือถือ */
@@ -77,4 +77,72 @@ header img {
 
 header img:hover {
   transform: scale(1.1) rotate(-3deg); /* เอฟเฟกต์เด้งดึ๋งเมื่อชี้เมาส์ */
+}
+/* =========================================
+   4. LAYOUT CONTAINERS (กล่องจัดหน้าหลัก)
+   ========================================= */
+.container {
+  max-width: 1200px; /* ความกว้างสูงสุดของเนื้อหา */
+  margin: 0 auto; /* จัดกึ่งกลางหน้าจอ */
+  padding: 40px 20px;
+}
+
+.page-content {
+  background-color: white;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+/* =========================================
+   5. HERO SECTION (ภาพปกขนาดใหญ่)
+   ========================================= */
+.hero {
+  position: relative;
+  height: 80vh; /* สูง 80% ของหน้าจอ */
+  width: 100%;
+
+  /* ตั้งค่าพื้นหลัง + ใส่สีดำจางๆ ทับภาพเพื่อให้ตัวหนังสือเด่น */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../images/A group of cats.jpg"); /* ตรวจสอบชื่อไฟล์รูปของคุณ */
+
+  background-size: cover; /*ยืดรูปให้เต็มพื้นที่เสมอ */
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero article {
+  background-color: rgba(255, 255, 255, 0.95); /* กล่องข้อความสีขาวโปร่งแสง */
+  padding: 50px;
+  border-radius: 30px;
+  max-width: 800px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  border: 2px solid white;
+
+  /* Animation */
+  opacity: 0;
+  animation: slideInUp 1s ease-out 0.5s forwards; /* เลื่อนขึ้นมาจากด้านล่าง */
+}
+
+.hero h2 {
+  color: #ff8c00; /* 🎨 หัวข้อสีส้ม */
+  font-size: 3rem;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 0px #ffe0b2;
+}
+
+.hero h3 {
+  font-size: 1.4rem;
+  margin: 20px 0;
+  color: #555;
+  font-weight: 400;
+}
+
+.hero ul {
+  list-style: none; /* เอาจุด bullet หน้าข้อความออก */
 }
