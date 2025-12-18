@@ -93,3 +93,40 @@ header img:hover {
   margin: 0 auto;
   padding: 0 20px;
 }
+/* =========================================
+   5. HERO SECTION (Music Vibe)
+   ========================================= */
+.hero {
+  height: 70vh; /* */
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/hero-bg.jpg"); /* อย่าลืมเปลี่ยนชื่อรูปเป็นภาพคอนเสิร์ตหรือสตูดิโอ */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  border-bottom: 5px solid #ff5500;
+}
+
+.hero article {
+  text-align: center;
+  color: #fff;
+  max-width: 700px;
+  padding: 20px;
+}
+
+.hero h2 {
+  font-size: 3.5rem; /* */
+  font-weight: 800;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+  text-shadow: 2px 2px 0 #ff5500; /* เงาสีส้ม */
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #ddd;
+}
