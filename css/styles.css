@@ -221,3 +221,61 @@ header img:hover {
   padding: 15px;
   border-radius: 50%;
 }
+/* =========================================
+   8. TEAM SECTION (ส่วนแนะนำทีมงาน - แก้ไขให้เรียงสวย)
+   ========================================= */
+.team {
+  display: flex; /* ✅ ใช้ Flex เพื่อจัดกึ่งกลางและยืดหยุ่น */
+  flex-wrap: wrap; /* ให้ปัดบรรทัดเมื่อจอเล็ก */
+  justify-content: center; /* ✅ จัดให้อยู่กึ่งกลางเสมอ (เหมาะกับ 5 คน) */
+  gap: 30px; /* ระยะห่างระหว่างคน */
+  margin-top: 40px;
+  text-align: center;
+}
+
+.team-member {
+  /* ✅ กำหนดความกว้างให้พอดี เพื่อให้เรียง 5 คนได้ในจอคอม */
+  flex: 0 0 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.team-member img {
+  width: 150px; /* ขนาดรูป */
+  height: 150px;
+  border-radius: 50%; /* ทำรูปวงกลม */
+  object-fit: cover;
+  border: 5px solid #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  margin-bottom: 25px; /*เพิ่มระยะห่างจากรูปถึงชื่อ */
+}
+
+.team-member:hover img {
+  transform: scale(1.15) rotate(3deg); /* รูปขยายเมื่อชี้ */
+  border-color: #ff8c00;
+}
+
+/* --- ปรับแต่งชื่อ (h3) --- */
+.team-member h3 {
+  color: #ff8c00;
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 10px; /* ✅ เว้นช่องว่างใต้ชื่อ */
+  min-height: 45px; /* สำรองพื้นที่ความสูงชื่อให้เท่ากัน ป้องกันเบี้ยว */
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* --- ปรับแต่งตำแหน่ง/คำอธิบาย (p) --- */
+.team-member p {
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.6; /* ✅ เพิ่มระยะห่างระหว่างบรรทัดให้อ่านง่าย ไม่เบียด */
+  font-weight: 500;
+  margin-top: 5px;
+}
