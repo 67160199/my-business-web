@@ -8,3 +8,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth; /* เลื่อนหน้าจอแบบนุ่มนวลเวลากดลิงก์ */
+}
+
+body {
+  font-family: "Prompt", "Roboto", "Segoe UI", sans-serif;
+  line-height: 1.6;
+  color: #4a4a4a; /* สีเทาเข้ม อ่านง่ายสบายตา */
+  background-color: #fffbf0; /* 🎨 พื้นหลังสีครีมอ่อนๆ (Warm Cream) */
+}
