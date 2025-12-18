@@ -1,5 +1,5 @@
 /* =========================================
-   1. FONTS & RESET (ใช้ฟอนต์ Inter ให้ดูทันสมัยเหมือนแอปเพลง)
+   1. FONTS & RESET 
    ========================================= */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Roboto:wght@400;700&display=swap");
 
@@ -19,4 +19,42 @@ body {
   line-height: 1.6;
   color: #333;
   background-color: #f2f2f2; /* พื้นหลังสีเทาอ่อน สไตล์ Modern App */
+}
+/* =========================================
+   2. NAVIGATION BAR (Sticky Header)
+   ========================================= */
+.nav-bar {
+  background-color: #333333; /* เปลี่ยนเป็นสีดำเข้มแบบ SoundCloud Player */
+  height: 60px;
+  position: sticky; /* */
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: #ccc; /* สีเทาจางๆ */
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  font-size: 0.9rem;
+  text-transform: uppercase; /* ตัวพิมพ์ใหญ่ */
+  letter-spacing: 1px;
+}
+
+.nav-bar a:hover,
+.nav-bar a.active {
+  color: #fff;
+  background-color: #111; /* ดำสนิทเมื่อชี้ */
+  border-bottom: 2px solid #ff5500; /* ขีดเส้นใต้สีส้ม */
 }
