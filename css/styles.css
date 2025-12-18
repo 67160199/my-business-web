@@ -279,3 +279,70 @@ header img:hover {
   font-weight: 500;
   margin-top: 5px;
 }
+/* =========================================
+   9. MISSION & VISION (พันธกิจและวิสัยทัศน์)
+   ========================================= */
+.mv-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* แบ่งเป็น 2 คอลัมน์เท่ากัน */
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.mv-card {
+  background-color: #fff8e1;
+  padding: 30px;
+  border-radius: 15px;
+  border-left: 8px solid #ff8c00; /* แถบสีด้านซ้าย */
+}
+
+.quote {
+  font-style: italic;
+  font-size: 1.2rem;
+  color: #d35400;
+  margin: 15px 0;
+  font-weight: 600;
+}
+
+/* =========================================
+   10. TABLES (ตารางราคาและบริการ)
+   ========================================= */
+.table-responsive {
+  overflow-x: auto; /* ให้เลื่อนซ้ายขวาได้ถ้าตารางล้นจอ */
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.service-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+.service-table th,
+.service-table td {
+  padding: 18px;
+  border: 1px solid #eee;
+  text-align: center;
+}
+
+.service-table th {
+  background-color: #ff8c00; /* หัวตารางสีส้ม */
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.service-table tr:nth-child(even) {
+  background-color: #fffbf0; /* สลับสีบรรทัดให้อ่านง่าย */
+}
+
+.service-table tr:hover {
+  background-color: #ffe0b2; /* เปลี่ยนสีเมื่อเอาเมาส์ชี้แถว */
+}
+
+.text-detail {
+  font-size: 0.9rem;
+  color: #666;
+}
